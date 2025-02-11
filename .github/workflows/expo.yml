@@ -22,16 +22,16 @@ jobs:
         run: npm install
 
       - name: Login to Expo
-        run: npx expo login --username ${{ secrets.EXPO_CLI_USERNAME }} --password ${{ secrets.EXPO_CLI_PASSWORD }}
+        env:
+          EXPO_TOKEN: ${{ secrets.EXPO_ACCESS_TOKEN }}
+        run: npx expo login --token $EXPO_TOKEN
 
       - name: Build Android app
         run: npx expo build:android --non-interactive
         env:
-          EXPO_CLI_USERNAME: ${{ secrets.EXPO_CLI_USERNAME }}
-          EXPO_CLI_PASSWORD: ${{ secrets.EXPO_CLI_PASSWORD }}
+          EXPO_TOKEN: ${{ secrets.EXPO_ACCESS_TOKEN }}
 
       - name: Build iOS app
         run: npx expo build:ios --non-interactive
         env:
-          EXPO_CLI_USERNAME: ${{ secrets.EXPO_CLI_USERNAME }}
-          EXPO_CLI_PASSWORD: ${{ secrets.EXPO_CLI_PASSWORD }}
+          EXPO_TOKEN: ${{ secrets.EXPO_ACCESS_TOKEN }}
