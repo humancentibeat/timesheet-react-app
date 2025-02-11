@@ -1,0 +1,43 @@
+/* Dark and Yellow Taxi Theme */
+body {
+    background-color: #1e1e1e;
+    color: #ffd700;
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #ffd700;
+}
+
+a {
+    color: #ffd700;
+}
+
+button {
+    background-color: #ffd700;
+    color: #1e1e1e;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffc107;
+}
+
+.modal {
+    background-color: #2a2a2a;
+    color: #ffd700;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.modal-header, .modal-footer {
+    background-color: #333333;
+}
+
+.modal-header h2, .modal-footer button {
+    color: #ffd700;
+}

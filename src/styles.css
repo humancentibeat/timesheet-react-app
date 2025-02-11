@@ -1,0 +1,29 @@
+/* General entry styles */
+.fc-event {
+  padding: 5px;
+  border-radius: 4px;
+  color: white;
+  margin: 2px 0;
+  font-size: 12px;
+}
+
+/* Specific styles for different entry types */
+.fc-event.Work {
+  background-color: #007bff; /* Blue for Work */
+  border: 1px solid #0056b3;
+}
+
+.fc-event.Freetime {
+  background-color: #28a745; /* Green for Freetime */
+  border: 1px solid #1e7e34;
+}
+
+.fc-event.Holiday {
+  background-color: #ffc107; /* Yellow for Holiday */
+  border: 1px solid #e0a800;
+}
+
+.fc-event.Sick {
+  background-color: #dc3545; /* Red for Sick */
+  border: 1px solid #c82333;
+}
